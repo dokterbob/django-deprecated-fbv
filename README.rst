@@ -5,6 +5,9 @@ Deprecated Django function based views from Django 1.4 in a neat little package.
 
 Usage
 -----
-1. `pip install django-deprecated-fbv`
-2. Change imports from `django.views.generic` into `deprecated_fbv`.
+1. Install the package from PIP::
+
+       pip install django-deprecated-fbv
+
+2. Change imports from ``django.views.generic`` into ``deprecated_fbv``.
 3. Consider a more sensible strategy, like fixing your code to get rid of those pesky deprecation errors (yes, I left them in place).
