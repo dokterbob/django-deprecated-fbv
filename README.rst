@@ -1,6 +1,12 @@
 django-deprecated-fbv
 =====================
 
+.. image:: https://badge.fury.io/py/django-deprecated-fbv.png
+    :target: http://badge.fury.io/py/django-deprecated-fbv
+
+.. image:: https://pypip.in/d/django-deprecated-fbv/badge.png
+        :target: https://crate.io/packages/django-deprecated-fbv?version=latest
+
 Deprecated Django function based generic views from Django 1.4 in a neat little package. Ugly little hack for deadlines and emergencies where Django 1.5 or 1.6 is necessary.
 
 Usage
