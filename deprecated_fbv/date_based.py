@@ -53,7 +53,7 @@ def archive_index(request, queryset, date_field, num_latest=15,
             c[key] = value()
         else:
             c[key] = value
-    return HttpResponse(t.render(c), mimetype=mimetype)
+    return HttpResponse(t.render(c), content_type=mimetype)
 
 def archive_year(request, year, queryset, date_field, template_name=None,
         template_loader=loader, extra_context=None, allow_empty=False,
@@ -101,7 +101,7 @@ def archive_year(request, year, queryset, date_field, template_name=None,
             c[key] = value()
         else:
             c[key] = value
-    return HttpResponse(t.render(c), mimetype=mimetype)
+    return HttpResponse(t.render(c), content_type=mimetype)
 
 def archive_month(request, year, month, queryset, date_field,
         month_format='%b', template_name=None, template_loader=loader,
@@ -181,7 +181,7 @@ def archive_month(request, year, month, queryset, date_field,
             c[key] = value()
         else:
             c[key] = value
-    return HttpResponse(t.render(c), mimetype=mimetype)
+    return HttpResponse(t.render(c), content_type=mimetype)
 
 def archive_week(request, year, week, queryset, date_field,
         template_name=None, template_loader=loader,
@@ -233,7 +233,7 @@ def archive_week(request, year, week, queryset, date_field,
             c[key] = value()
         else:
             c[key] = value
-    return HttpResponse(t.render(c), mimetype=mimetype)
+    return HttpResponse(t.render(c), content_type=mimetype)
 
 def archive_day(request, year, month, day, queryset, date_field,
         month_format='%b', day_format='%d', template_name=None,
@@ -299,7 +299,7 @@ def archive_day(request, year, month, day, queryset, date_field,
             c[key] = value()
         else:
             c[key] = value
-    return HttpResponse(t.render(c), mimetype=mimetype)
+    return HttpResponse(t.render(c), content_type=mimetype)
 
 def archive_today(request, **kwargs):
     """
@@ -370,5 +370,5 @@ def object_detail(request, year, month, day, queryset, date_field,
             c[key] = value()
         else:
             c[key] = value
-    response = HttpResponse(t.render(c), mimetype=mimetype)
+    response = HttpResponse(t.render(c), content_type=mimetype)
     return response
